@@ -6,21 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html element</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        :root {
+            --my-padding: 40px;
+            --my-margin: 20px;
+            --my-font-size: 14px;
+            /* --my-flex-direction: column; */
+        }
+
+        @media screen and (min-width:700px) {
+            :root {
+                --my-padding: 50px;
+                --my-margin: 20px;
+                --my-font-size: 20px;
+                --my-flex-direction: row;
+            }
+        }
+
+        nav {
+            background-color: blue;
+            color: #fff;
+            padding: 20px var(--my-padding);
+        }
+
+        header.navigation-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrapper,
+        .logo {
+            display: grid;
+            place-items: center;
+        }
+
+        .logo {
+            height: 40px;
+            width: 40px;
+            border: 3px solid red;
+            font-size: 14px;
+            border-radius: 1000px;
+            background-color: white;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .tagname {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .navigation-link-wrapper {
+            display: flex;
+            flex-direction: var(--my-flex-direction);
+        }
+
+        .navigation-link {
+            color: rgb(209, 209, 209);
+            text-decoration: none;
+            margin-left: var(--my-margin);
+            font-size: var(--my-font-size);
+            transition: all 0.5s;
+        }
+
+        .navigation-link:hover {
+            color: #fff;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <header class="navigation-container">
+            <div class="logo-wrapper">
+                <div class="logo">NSV</div>
+                <h1 class="tagname">NsiiVision</h1>
+            </div>
+
             <div class="navigation-link-wrapper">
-                <a href="" class="navigation-link">About</a>
+                <a href="" class="navigation-link about-navigation-link">About</a>
                 <a href="" class="navigation-link">Work</a>
                 <a href="" class="navigation-link">Contact</a>
             </div>
         </header>
     </nav>
     <main>
+        <section class="setion-container">
+            <div class="paragraph-wrapper">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="div-wrapper">
+                <article class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur
+                    necessitatibus voluptatibus reiciendis magnam aliquam consectetur, itaque labore quas quae ipsam ex
+                    iste amet ut quidem eaque consequatur perferendis laboriosam!</article>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
     </main>
     <footer>
 
