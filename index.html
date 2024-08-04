@@ -16,7 +16,7 @@
             --my-padding: 40px;
             --my-margin: 20px;
             --my-font-size: 14px;
-            /* --my-flex-direction: column; */
+
         }
 
         @media screen and (min-width:700px) {
@@ -44,6 +44,7 @@
         .logo {
             display: grid;
             place-items: center;
+
         }
 
         .logo {
@@ -68,7 +69,7 @@
         }
 
         .navigation-link {
-            color: rgb(209, 209, 209);
+            color: white;
             text-decoration: none;
             margin-left: var(--my-margin);
             font-size: var(--my-font-size);
@@ -78,6 +79,19 @@
         .navigation-link:hover {
             color: #fff;
         }
+
+        .section-container {
+            background-color: rgba(139, 0, 139, 0.616);
+            padding: 130px;
+            font-style: normal;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        .div-wrapper {
+            font-style: italic;
+            font-size: x-small;
+        }
     </style>
 </head>
 
@@ -86,7 +100,7 @@
         <header class="navigation-container">
             <div class="logo-wrapper">
                 <div class="logo">NSV</div>
-                <h1 class="tagname">NsiiVision</h1>
+                <h1 class="tagname">Nsiivision</h1>
             </div>
 
             <div class="navigation-link-wrapper">
@@ -97,16 +111,12 @@
         </header>
     </nav>
     <main>
-        <section class="setion-container">
+        <section class="section-container">
             <div class="paragraph-wrapper">
-                <p></p>
-                <p></p>
+                <p>Hey i'm Nsiivision</p>
             </div>
             <div class="div-wrapper">
-                <article class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur
-                    necessitatibus voluptatibus reiciendis magnam aliquam consectetur, itaque labore quas quae ipsam ex
-                    iste amet ut quidem eaque consequatur perferendis laboriosam!</article>
-                <div></div>
+                <article class="desc">A front-end developer</article>
                 <div></div>
             </div>
         </section>
